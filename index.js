@@ -1,13 +1,14 @@
 let image;
-    var pageImage = document.querySelector("img");
+var pageImage = document.querySelector("img");
 var phase = document.querySelector("#phase");
+
 var d = new Date();
     var dd = d.getDate();
     var mm = d.getMonth()+1;
     var yy = d.getFullYear();
 var Moon = {
   phase: function (yy,mm,dd) {
-    
+      
     var c = e = jd = b = 0;
 
     if (mm < 3) {
@@ -28,35 +29,35 @@ var Moon = {
     
     switch (b) {
       case 0:
-        pageImage.src = "https://upload.wikimedia.org/wikipedia/commons/d/dd/New_Moon.jpg";
+        pageImage.src = "newmoon.jpg";
         phase.innerHTML = 'New-Moon';
         break;
       case 1:
-        pageImage.src = 'https://upload.wikimedia.org/wikipedia/commons/1/1e/Crescent_Moon.JPG';
+        pageImage.src = 'waxingcrescent.jpg';
         phase.innerHTML = 'Waxing-Crescent-Moon';
         break;
       case 2:
-        pageImage.src = "https://www.refinery29.com/images/9879630.jpg";
+        pageImage.src = "firstquarter.jpg";
         phase.innerHTML = 'Quarter-Moon';
         break;
       case 3:
-        pageImage.src = "https://www.refinery29.com/images/9879638.jpg?format=jpg&width=1090&height=1308&quality=80";
+        pageImage.src = "waxinggibbous.jpg";
         phase.innerHTML = 'Waxing-Gibbous-Moon';
         break;
       case 4:
-        pageImage.src = "https://www.refinery29.com/images/9879644.jpg?format=jpg&width=1090&height=1307&quality=80";
+        pageImage.src = "fullmoon.jpg";
         phase.innerHTML = 'Full-Moon';
         break;
       case 5:
-        pageImage.src = "https://www.refinery29.com/images/9879647.jpg?format=jpg&width=1090&height=1308&quality=80";
+        pageImage.src = "waninggibbous.jpg";
         phase.innerHTML = 'Waning-Gibbous-Moon';
         break;
       case 6:
-        pageImage.src = "https://www.refinery29.com/images/9879651.jpg";
+        pageImage.src = "lastquarter.jpg";
         phase.innerHTML = 'Last-Quarter-Moon';
         break;
       case 7:
-        pageImage.src = "https://www.refinery29.com/images/9879656.jpg";
+        pageImage.src = "waningcrescent.jpg";
         phase.innerHTML = 'Waning-Crescent-Moon';
         break;
     }
