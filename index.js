@@ -29,35 +29,35 @@ var Moon = {
     
     switch (b) {
       case 0:
-        pageImage.src = "newmoon.jpg";
+        pageImage.src = "newmoon.png";
         phase.innerHTML = 'New-Moon';
         break;
       case 1:
-        pageImage.src = 'waxingcrescent.jpg';
+        pageImage.src = 'waxingcrescent.png';
         phase.innerHTML = 'Waxing-Crescent-Moon';
         break;
       case 2:
-        pageImage.src = "firstquarter.jpg";
+        pageImage.src = "firstquarter.png";
         phase.innerHTML = 'Quarter-Moon';
         break;
       case 3:
-        pageImage.src = "waxinggibbous.jpg";
+        pageImage.src = "waxinggibbous.png";
         phase.innerHTML = 'Waxing-Gibbous-Moon';
         break;
       case 4:
-        pageImage.src = "fullmoon.jpg";
+        pageImage.src = "fullmoon.png";
         phase.innerHTML = 'Full-Moon';
         break;
       case 5:
-        pageImage.src = "waninggibbous.jpg";
+        pageImage.src = "waninggibbous.png";
         phase.innerHTML = 'Waning-Gibbous-Moon';
         break;
       case 6:
-        pageImage.src = "lastquarter.jpg";
+        pageImage.src = "lastquarter.png";
         phase.innerHTML = 'Last-Quarter-Moon';
         break;
       case 7:
-        pageImage.src = "waningcrescent.jpg";
+        pageImage.src = "waningcrescent.png";
         phase.innerHTML = 'Waning-Crescent-Moon';
         break;
     }
